@@ -1,0 +1,19 @@
+.row {
+
+    @mixin atMedium {
+        &__medium-6 {
+            float: left;
+            width: 50%;
+        }
+    }
+
+    @mixin atLarge {
+        &__large-4 {
+            float: left;
+            width: 33.33%;
+
+        }
+    }
+
+    @mixin clearfix;
+}

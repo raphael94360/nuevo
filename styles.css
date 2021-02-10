@@ -1,0 +1,1947 @@
+
+/* ---- GENERAL ---- */
+
+*, ::before, ::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-image: url(../img/motif_hover.png);
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+a {
+    text-decoration: none;
+}
+
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1em;
+    line-height: 1.8em;
+}  
+    
+li a {
+    text-decoration: none;
+    color: #003e57;
+}
+    
+li a:hover {
+    color: #0087bd;
+}
+
+button {
+    box-shadow: 5px 5px 5px rgba(0,0,0,.3);
+}    
+
+.button a {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.button:hover {
+    background-color: #003e57;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: bottom;
+}
+
+.container-global {
+    width: 100%;
+    max-width: 1260px;
+    margin: 0 auto;
+    height: auto;
+}
+
+
+@media screen and (min-width: 375px) {  
+
+/* ---- HEADER ---- */
+   
+    .header {
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-auto-rows: auto;
+        position: fixed;
+        background-color: white;
+        z-index: 9999;
+        width: 100%;
+        top: 0;
+    }
+
+    .logo {
+        grid-row-start: 1;
+        grid-row-end: 2;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        background-image: url(../img/mobile-logo.png);
+        background-repeat: no-repeat;
+        height: 80px;
+
+    }
+
+    .nav {
+        grid-row-start: 1;
+        grid-row-end: 2;
+        grid-column-start: 3;
+        grid-column-end: 4;
+        padding: 10px 0px 0px 30px; 
+        font-size: 2.5em;
+    }
+
+    .candidature a {
+        font-size: 1.2em;    
+        color: white;
+        text-align: center;
+        padding: 20px 0px 20px 0px;
+        width: 330px;
+        margin: 30px auto;
+        border-radius: 5px;
+        background-color: #003e57;
+    }
+
+
+
+    .navigation ul li::before {
+        content:"";
+    }
+           
+    .navigation li {
+    	display: none;
+    }
+        
+    .overlay {
+        height: 100%;
+        width: 0;
+        position: fixed; 
+        z-index: 9999; 
+        left: 0;
+        top: 0;
+        background-color: rgb(0,62,87); 
+        overflow-x: hidden; 
+        transition: 0.3s; 
+        
+    } 
+        
+    .overlay-content {
+        position: relative;
+        top: 25%; 
+        width: 100%; 
+        text-align: center;
+        margin-top: 10px;     
+    }
+
+    .overlay a {
+        padding: 15px;
+        text-decoration: none;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 1em;
+        color: white;
+        display: block; 
+        transition: 0.3s; 
+    }
+
+    .overlay a:hover, .overlay a:focus {
+        color: #0087BD;
+    }
+
+    .overlay .closebtn {
+        position: absolute;
+        top: 20px;
+        right: 45px;
+        font-size: 3.125em;
+    }
+    
+/* ---- BREADCRUMB ---- */
+    
+    .breadcrumb {
+		position: fixed;
+        width: 100%;
+        background-color: #129cbd; 
+        padding-top: 82px;
+    }
+    
+    .breadcrumb-container {
+        padding: 15px;
+    }
+
+	.breadcrumb ul li {
+    	display: inline-block;
+    }
+    
+    .breadcrumb ul li::before {
+        content: "\ ";
+    }
+    
+	.breadcrumb ul li img {	
+        margin-bottom: 9px;
+        padding: 0px 10px;
+	}
+    
+    .breadcrumb ul li.active {
+        color: white;
+        cursor: text;
+        font-size: 0.75em;
+    }
+
+	.breadcrumb ul li a {
+    	font-size: 0.75em;
+    	text-decoration: none;
+    	color: black;
+	}
+
+	.breadcrumb ul li a:hover {
+    	color: #0087bd;
+	}
+    
+    .breadcrumb-plusgrand {
+        font-size: 1em;
+        padding: 0px 5px;
+    }
+    
+/* ---- FICHE FORMATION ---- */    
+    
+    .fiche {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-auto-rows: auto;
+        margin: 0px;
+        padding: 170px 20px 20px 20px;
+        background-image: url(../img/motif_hover.png);
+    }
+
+    .fiche h1 {
+        font-size: 1.3em;
+        color: #003e57;
+        border-bottom: 0.05em dotted #003e57;
+        padding-bottom: 20px;
+    }
+
+    .fiche-descriptif h2, .fiche-programme h2 {
+        padding: 15px;
+        background-color: #003e57;
+        color: white;
+        width: 320px;
+        font-size: 1.2em;
+        border-radius: 5px;
+        margin: 15px 0px;
+    }
+
+    .fiche-descriptif h4 {
+        font-size: 1em;
+        padding: 10px 0px;
+        line-height: 1.5em;
+        color: #003e57;
+    }
+    
+    .fiche-descriptif p, .fiche-programme p {
+        color: #003e57;
+        padding: 10px;
+        line-height: 1.4em;
+    }
+
+    .fiche-descriptif ul, .fiche-programme ul {
+        list-style: none;
+    }
+
+    .fiche-descriptif ul li, .fiche-programme ul li {
+        padding: 10px 0px 0px 20px;
+        line-height: 1.5em;
+        padding-bottom: 10px;
+    }
+
+    li::before {
+        content:"\25AA";
+        color: #129cbd;
+        display: inline-block;
+        width: 1em;
+        margin-left: -1.2em;
+    }
+    
+    .fiche-img-container {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+     
+    .fiche-programme h3 {
+        padding: 7px 10px;
+        color: #129cbd;
+        font-size: 1.3em;
+        border: 1px solid #129cbd;
+        width: 320px;
+    }
+    
+    .fiche-programme h4 {
+        font-size: 1em;
+        padding: 10px 0px;
+        line-height: 1.5em;
+        color: #003e57;
+    }
+     
+    .fiche-infos-box {  
+		width: 335px;  
+        margin: 30px auto;
+        padding: 0px 7px;
+        padding-bottom: 10px;
+		border: 1px solid #ccc;
+		border-radius: 5px;
+		background-color: #fff;
+		box-shadow: 5px 5px 5px rgba(0,0,0,.3);
+	}
+
+	.fiche-infos-box h1 {
+		text-align: center;
+		color : #003e57;
+		font-size: 1.1em;
+		font-style: normal;
+		padding: 10px 0px;
+        border-bottom: none;
+    }
+    
+    .fiche-infos-box h4 {
+        font-size: 1em;
+        padding: 0px 15px;
+        line-height: 1.5em;
+        color: #003e57;
+    }
+
+	.center {
+		display: block;
+        margin: 0px auto;
+        padding-bottom: 5px;
+    }
+    
+    .fiche-infos-box ul {
+        list-style: none;
+        padding: 10px 0px 10px 15px;
+    }
+
+    .fiche-infos-box ul li {
+        padding-left: 20px;
+    }
+
+    .fiche-infos-box ul li::before {
+        content:"\25AA";
+        color: #129cbd;
+        display: inline-block;
+        width: 1em;
+        margin-left: -1.2em;
+    }
+
+	.fiche-infos-box p {
+		color: black;
+		font-size: 1em;
+		line-height: 1.3em;
+		padding: 5px 15px;
+        hyphens: auto;
+	}
+    
+    .centrer-typo {
+        text-align: center;
+    }
+    
+    p.public {
+        margin-left: 20px;
+    }
+    
+    
+/* ---- HERO INDEX/COACHING/FORMATION/TRANSITION ---- */
+    
+    .hero {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-auto-rows: auto; 
+        margin: 0px;
+        width: 100%;
+        padding: 120px 15px 20px 15px;
+    } 
+         
+    .hero h1 {
+        color: #003e57;
+        border-bottom: 0.05em dotted #003e57;
+        font-size: 1.5em;
+        line-height: 1.3em;
+        margin: 0px;
+        padding-bottom: 20px;
+    }
+    
+	.hero h2 {
+        color: #003e57;
+        padding: 20px 0px;
+		font-size: 1.1em;
+		text-align: left;
+	}
+
+    .hero p {
+        color: #003e57;
+        font-size: 1.1em;
+        line-height: 1.4em;
+        padding: 20px 0px;
+  
+    }
+
+    .hero-slideshow {
+        display: none;
+    }
+
+	.hero-img-container {
+        display: block;
+        text-align: center;
+    }
+    
+    .hero-img-container img {
+        border-radius: 5px;
+    }     
+
+/* ---- SECTION-BLOC & SECTION-BLOC-BOX ---- */    
+
+    .section-bloc {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-auto-rows: auto;
+        padding: 20px 20px 50px 20px;
+    }
+            
+    .section-bloc h1 {
+        font-size: 1.2em;    
+        color: white;
+        text-align: center;
+        padding: 20px 0px 20px 0px;
+        width: 330px;
+        margin: 30px auto;
+        border-radius: 5px;
+        background-color: #003e57;
+
+    }
+
+    .section-bloc-box {
+        position: relative;
+        margin: 30px auto;
+        width: 330px;
+        height: 520px;
+        border-radius: 5px;
+        background-color: #fffefe;
+        box-shadow: 5px 5px 5px rgba(0,0,0,.3);
+        border: 1px dotted #003e57;
+    }
+	       	
+    .section-bloc-box h2 {
+        color: #003e57;
+		padding: 15px 10px;
+        font-size: 1em;
+        font-style: normal;
+        text-align: center;
+        background-image: url(../img/motif_hover.png);
+    }    
+   
+    .section-bloc-box p {
+		text-align: left;
+        line-height: 1.4em;
+        font-size: 1em;
+        padding: 20px;
+        hyphens: auto;      
+    }
+	
+	.section-bloc-box h4 {
+        position: absolute;
+        bottom: 0;
+        width: 330px;
+		opacity: 0.9;
+		font-size: 0.9em;
+		font-weight: normal;
+        padding: 20px;
+        text-align: center;    
+        color: white;
+        background-image: url(../img/motif.png);
+	}
+	
+	.section-bloc-box h4:hover {
+		opacity: 1;
+        color: #fff;
+    }
+    
+/* ---- COACHING / FORMATION / TRANSITION BLOC & BLOC BOX ---- */
+    
+    .coaching-bloc, .formation-bloc, .transition-bloc {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-auto-rows: auto;
+        padding: 20px 20px 50px 20px;
+    }
+
+    .coaching-bloc h1, .formation-bloc h1, .transition-bloc h1 {
+        font-size: 1.2em;
+        font-weight: 300;
+        color: white;
+        text-align: center;
+        padding: 20px 0px 20px 0px;
+        width: 330px;
+        margin: 30px auto;
+        border-radius: 5px;
+        background-color: #003e57;
+    }
+            
+    .coaching-bloc-box { 
+        position: relative;
+        margin: 30px auto;
+        width: 330px;
+        height: auto;
+        border-radius: 5px;
+        background-color: #fff;
+        box-shadow: 5px 5px 5px rgba(0,0,0,.3);
+        border: 1px dotted #003e57;
+    }
+
+    .formation-bloc-box {
+        position: relative;
+        margin: 30px auto;
+        width: 330px;
+        height: auto;
+        border-radius: 5px;
+        background-color: #fff;
+        box-shadow: 5px 5px 5px rgba(0,0,0,.3);
+        border: 1px dotted #003e57;
+    }
+
+    .transition-bloc-box {
+        position: relative;
+        margin: 30px auto;
+        width: 330px;
+        height: 530px;
+        border-radius: 5px;
+        background-color: #fff;
+        box-shadow: 5px 5px 5px rgba(0,0,0,.3);
+        border: 1px dotted #003e57;
+    }
+  
+    .coaching-bloc-box h5, .formation-bloc-box h5 {
+		opacity: 0.9;
+		font-size: 0.9em;
+		font-weight: normal;
+        padding: 10px;
+        text-align: center;    
+        color: #003e57;
+        border-bottom: 1px dotted #003e57;
+	}
+	
+	.coaching-bloc-box h5:hover, .formation-bloc-box h5:hover {
+		opacity: 1;
+        color: #fff;
+        background-color: #003e57;
+    }   
+    	       	
+    .formation-bloc-box h2, .transition-bloc-box h2 {
+        color: #003e57;
+		padding: 15px 10px;
+        font-size: 1em;
+        font-style: normal;
+        text-align: center;
+        background-image: url(../img/motif_hover.png);
+    }  
+          
+    .transition-bloc-box p {
+		text-align: left;
+        line-height: 1.4em;
+        font-size: 1em;
+        padding: 20px 10px;
+        hyphens: auto;
+        
+    }
+    
+    .transition-bloc-box h4 {
+        position: absolute;
+        bottom: 0;
+        width: 330px;
+		opacity: 0.9;
+		font-size: 1em;
+		font-weight: normal;
+        padding: 20px;
+        text-align: center;    
+        color: white;
+        background-image: url(../img/motif.png);
+	}
+	
+	.transition-bloc-box h4:hover {
+		opacity: 1;
+        color: #fff;
+    }
+         
+
+/* ---- PARTENAIRE ---- */    
+
+    .partenaire {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-auto-rows: auto;
+        padding: 20px 0px;
+    }
+        
+    .partenairebox {
+        margin: 30px auto 30px auto;
+            
+    }
+        
+    .partenaire h1 {
+        font-size: 1.3em;    
+        color: white;
+        text-align: center;
+        padding: 20px 0px 20px 0px;
+        width: 335px;
+        margin: 30px auto;
+        border-radius: 5px;
+        background-color: #003e57;
+
+    }
+    
+    .logo-partenaire {
+        padding: 20px 0px 20px 0px;
+    }     
+    
+/* ---- FICHE RUBRIQUE PROMOTION ---- */    
+
+	.promotion {
+		padding: 20px 20px;
+	}
+
+	.promotionbox {
+		margin: 30px auto;
+		border-radius: 5px;
+	}
+    
+    .promotion h2 {
+        text-align: center;
+        color: white;
+        font-size: 1.1em;
+        padding: 20px 20px;
+        border-radius: 7px;
+        background-color: #003e57;
+        width: 330px;
+        margin: auto;
+    }
+
+    .promotion ul {
+        padding: 10px 20px;   
+    }
+
+    .promotion ul li::before {
+        content:"";
+    }
+
+	.promotion ul li {
+    	text-align: center;
+        padding: 10px 0px;
+	}
+    
+    .promotion ul li a {
+    	color: #003e57;
+    	line-height: 1.5em;
+   }
+
+	.promotion ul li a:hover {
+    	color: #0087bd;
+    }
+    
+/* ---- PAGE QUI SOMMES NOUS ---- */
+
+    .qui-sommes-nous {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-auto-rows: auto;
+        padding: 120px 30px 50px 30px;
+        background-image: url(../img/motif_hover.png);
+    }
+    
+    .qui-sommes-nous h1 {
+        color: #003e57;
+        border-bottom: 1px dotted #003e57;
+        font-size: 1.5em;
+        padding-bottom: 20px;
+    }
+
+    .presentation-img {
+        width: 315px;
+        height: 210px;
+        background-image: url(../img/presentation375.jpg);
+    }
+
+    .img-container-page {
+        display: block;
+        margin: 0px auto;
+    }
+    
+    .qui-sommes-nous h2 {
+        color: #003e57;
+        font-size: 1.4em;
+        text-align: left;
+        padding: 20px 0px;
+        width: 250px;
+    }
+    
+    .qui-sommes-nous p {
+        color: #003e57;
+        line-height: 1.4em;
+        padding: 5px 0px;
+    }
+    
+    p.first {
+        padding-top: 15px;
+    }
+      
+    .secteur-activite p {
+        text-align: center;
+    }
+
+/* ---- PAGE MENTIONS LEGALES ---- */    
+    
+    .mentions-legales {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-auto-rows: auto;
+        padding: 120px 30px 50px 30px;
+        background-image: url(../img/motif_hover.png);
+    }
+    
+    .mentions-legales h1 {
+        color: #003e57;
+        border-bottom: 1px dotted #003e57;
+        font-size: 1.5em;
+        padding-bottom: 20px;
+    }
+    
+    .mentions-legales h2 {
+        color: #003e57;
+        font-size: 1.4em;
+        text-align: left;
+        padding: 20px 0px;
+        width: 250px;
+    }
+    
+    .mentions-legales p {
+        color: #003e57;
+        line-height: 1.4em;
+        padding: 5px 0px;
+        text-align: justify;
+        hyphens: auto;
+    }
+
+/* ---- PAGE NOS AGENCES ---- */       
+
+.agences-bloc {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows: auto;
+    padding: 20px 20px 50px 20px;
+}
+        
+.agences-bloc h1 {
+    font-size: 1.2em;    
+    color: white;
+    text-align: center;
+    padding: 20px 0px 20px 0px;
+    width: 330px;
+    margin: 30px auto;
+    border-radius: 5px;
+    background-color: #003e57;
+
+}
+
+.agences-bloc-box {
+    position: relative;
+    margin: 30px auto;
+    width: 330px;
+    height: 650px;
+    border-radius: 5px;
+    background-color: #fffefe;
+    box-shadow: 5px 5px 5px rgba(0,0,0,.3);
+    border: 1px dotted #003e57;
+}
+           
+.agences-bloc-box h2 {
+    color: #003e57;
+    padding: 15px 10px;
+    font-size: 1em;
+    font-style: normal;
+    text-align: center;
+    background-image: url(../img/motif_hover.png);
+} 
+
+.agences-icone {
+    text-align: center;
+    margin: 0px auto;
+}
+
+.agences-bloc-box p {
+    text-align: center;
+    line-height: 1.4em;
+    font-size: 1em;
+    padding: 20px;     
+}
+
+.agences-bloc-box h4 {
+    position: absolute;
+    bottom: 0;
+    width: 330px;
+    opacity: 0.9;
+    font-size: 0.9em;
+    font-weight: normal;
+    padding: 20px;
+    text-align: center;    
+    color: white;
+    background-image: url(../img/motif.png);
+}
+
+.agences-bloc-box h4:hover {
+    opacity: 1;
+    color: #fff;
+}
+
+.agences-bloc-box h5 {
+    margin: 15px 0px;
+    text-align: center;
+}
+
+
+
+    
+/* ---- COORDONNEES ---- */
+    
+    .coordonnees {
+        padding: 20px 20px;
+        background-image: url(../img/motif_hover.png);
+    }
+    
+    .coords-logo {
+        padding-top: 20px;
+    }
+    
+    .coords-logo-img {
+        display: block;
+        margin: 0px auto;
+    }
+          
+    .coords p {
+        text-align: left;
+        color: #003e57;
+    }
+        
+    .adresse p {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        line-height: 1.5em;
+        text-align: center;
+    }
+            
+    .telephone h2 {
+        color: #003e57;    
+        text-align: center;
+        font-style: normal;
+        font-size : 2em;
+        padding-top: 10px;
+        padding-bottom: 30px;
+    }
+    
+    .button-contact h2 {
+        text-align: center;
+        color: #003e57;
+        font-size: 1em;
+        padding: 20px 20px;
+        border: 1px solid #0087bd;
+        border-radius: 7px;
+        background-color: #0087bd;
+        width: 65%;
+        margin: auto;
+    }
+
+/*---- FORMULAIRE ----*/    
+
+    
+    .formulaire {
+        padding: 80px 20px 30px 20px;
+    }
+    
+    .formulaire-intro h2 {
+        text-align: center;
+        padding: 20px 0px;
+        color: #003e57;
+        font-style: normal;
+        font-size: 2em;
+    }
+    
+    .formulaire-intro p {
+        padding: 10px 0px;
+        font-size: 1.5em;
+    }
+    
+    .form-control {
+        width: 330px;
+        line-height: 1.5;
+        background-color: #f4f2f2;
+        border: 1px solid #003e57;
+        border-radius: 3px; 
+        font-size: 1.1em;
+        color: #003e57;
+        font-style: normal;
+        font-family: Helvetica, sans-serif;
+    }
+    
+    input, textarea {
+        margin: 10px 0px;
+        padding: 10px;
+    }
+    
+    input {
+        height: 40px;
+    }
+    
+    textarea {
+        height: 150px;
+    }
+        
+    .comments {
+        margin-bottom: 15px;
+        font-style: italic;
+        color: red;
+        font-size: 0.8em;
+    }    
+        
+    .form-info p {
+        text-align: left;
+        margin: 10px 0px;
+        padding: 20px 0px;
+    }     
+    
+    .envoyer {
+        margin: 10px 0px;
+    }
+        
+    .form-button {
+        font-family: "helvetica", sans-serif;
+        font-style: italic;
+        background: #003e57;
+        color: white;
+        width: 100%;
+        height: 60px;
+        font-weight: bold;
+        text-transform: uppercase;
+        border-radius: 5px;
+    }
+    
+    .form-button:hover {
+        background: #0087bd;
+        color: white;
+    }
+    
+    .form-button:active {
+        background: white;
+        color: #003e57;
+    }
+    
+/* CHECKBOX */
+/*    
+    .check-submit {
+	   position: relative;
+    }
+
+    [type="radio"] {
+        position: absolute;
+        left: 0;
+        top: 5px;
+        margin: 0px;
+        height: 0;
+    }
+
+    [type="radio"] + label {
+        position: relative;
+        padding-left: 2.3em;
+        font-size: 0.9em;
+        font-family: helvetica, sans-serif;
+        line-height: 1.7;
+        cursor: pointer; 
+        color: black;
+    }
+*/
+/* MESSAGE DE CONFIRMATION */
+    
+    .thankyou {
+        display: block;
+        width: 100%;
+        margin: auto;
+        border: 1px solid #003e57;
+        border-radius: 3px;
+    }
+    
+    .thankyou p {
+        padding: 10px;
+        text-align: center;
+        color: #003e57;
+        font-size: 1em;
+        line-height: 1.4;
+    }
+
+/* ---- FOOTER ---- */    
+
+    .footer {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-auto-rows: auto;
+        background-color:#003e57;
+        margin: 0px auto;
+        padding-bottom: 30px;
+    }  
+    
+    .footerlist {
+        margin-left: 30px; 
+    }
+    
+    .footerlist ul {
+        padding-left: 10px;
+    }
+        
+    .footerlist h5 {
+        padding: 20px 0px;
+        color: #0087BD;
+        font-size: 0.9em;
+    }
+
+    .footerlist ul li::before {
+        content:"";
+    }
+
+    .footerlist ul li {
+        padding: 5px 0px;
+    }
+ 
+    .footerlist ul li a {
+        font-size: 0.9em;
+        font-style: normal;
+        color: #fff;
+        padding: 15px 30px;
+    }
+
+    .footerlist ul li a:hover {
+        color: #129cbd;
+    }
+    
+} 
+
+@media screen and (min-width: 425px) {
+      
+    
+/* ---- SECTION-BLOC & SECTION-BLOC-BOX ---- */        
+    
+    .section-bloc h1 {
+        width: 350px;
+    }
+
+    .section-bloc-box {
+        width: 350px;
+        height: 560px;
+    }
+
+    .section-bloc-box h4 {
+        width: 350px;
+    }
+
+    .section-bloc-box p {
+        padding: 20px 40px;
+    }
+    
+/* ---- COACHING / FORMATION / TRANSITION BLOC & BLOC BOX ---- */
+    
+    .coaching-bloc h1, .formation-bloc h1, .transition-bloc h1 {
+        width: 350px;
+    }
+
+    .coaching-bloc-box { 
+        width: 350px;
+    }
+
+    .formation-bloc-box {
+        width: 350px;
+    }
+
+    .transition-bloc-box {
+        width: 350px;
+    }
+
+    .coaching-bloc-box p, .formation-bloc-box p {
+        padding: 20px 40px;
+    }
+
+    
+    .transition-bloc-box h4 {
+        width: 350px;
+    }
+
+/* ---- FORMULAIRE ---- */    
+    
+    .form-control {
+        width: 360px;
+    }
+
+/* ---- FICHE ---- */
+
+.fiche-infos-box {
+    width: 385px;
+}
+
+/* ---- PAGE QUI SOMMES NOUS ---- */
+
+.presentation-img {
+    width: 365px;
+    height: 230px;
+    background-image: url(../img/presentation425.jpg);
+}
+
+}
+
+@media screen and (min-width: 768px) {
+
+/* ---- HEADER ---- */  
+
+    .logo {
+        grid-row-start: 1;
+        grid-row-end: 2;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        background-image: url(../img/logo.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        padding: 20px 0px;
+        height: 120px;
+    }
+
+    .nav {
+        grid-row-start: 1;
+        grid-row-end: 2;
+        grid-column-start: 3;
+        grid-column-end: 4;
+        padding-top: 30px;
+        height: 120px; 
+        border-bottom: none;
+        border-top: none;
+    }
+    
+    .fade {
+        -webkit-animation-name: fade;
+        -webkit-animation-duration: 1.5s;
+        animation-name: fade;
+        animation-duration: 1.5s;
+    }
+
+    @-webkit-keyframes fade {
+        from {opacity: .4} 
+        to {opacity: 1}
+    }
+
+    @keyframes fade {
+        from {opacity: .4} 
+        to {opacity: 1}
+    }
+
+    .overlay {
+        height: 100%;
+    } 
+    
+/* ---- BREADCRUMB ---- */    
+
+    .breadcrumb {
+        padding: 120px 0px 0px 0px;
+    }
+
+    .breadcrumb-container {
+        padding: 15px 30px;
+    }
+    
+/* ---- HERO ---- */    
+        
+    .hero {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-auto-rows: auto;
+        column-gap: 30px;
+        padding: 150px 30px 0px 30px;
+    }
+
+    .hero h1 {
+        border-bottom: none;
+    }
+
+    .hero h2 {
+        padding: 20px 0px;
+        text-align: left;
+    }   
+
+    .hero p {
+        padding: 15px 0px; 
+        font-size: 1em;
+        line-height: 1.5em;
+    }    
+
+    .hero-slideshow {
+        grid-row-start: 1;
+        grid-row-end: 4;
+        grid-column-start: 2;
+        grid-column-end: 3;
+        display: block;  
+    } 
+
+    .img-container {
+        display: block;
+        padding-top: 40px;
+        padding-right: 20px;
+    } 
+    
+/* ---- FICHE FORMATION ---- */    
+    
+    .fiche {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-auto-rows: auto;
+        column-gap: 20px;
+        margin: 0px;
+        padding: 200px 30px 20px 30px;
+        background-image: url(../img/motif_hover.png);
+    }
+    
+    .fiche h1 {
+        grid-row-start: 1;
+        grid-row-end: 2;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        border-bottom: none;
+    }
+    
+    .fiche-descriptif {
+        grid-row-start: 2;
+        grid-row-end: 3;
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+    
+    .fiche-descriptif p, .fiche-programme p {
+        padding: 10px;
+    }
+   
+    .fiche-programme {
+        grid-row-start: 4;
+        grid-row-end: 3;
+        grid-column-start: 1;
+        grid-column-end: 2;
+    }
+        
+    .fiche-infos {  
+        grid-row-start: 4;
+        grid-row-end: 3;
+        grid-column-start: 2;
+        grid-column-end: 3;
+        margin-top: 100px;
+    }
+
+    .fiche-img-container {
+        width: 350px;
+        margin: 0px auto;
+    }
+
+    .fiche-infos-box {
+        width: 350px;
+    }
+
+/* ---- SECTION-BLOC & SECTION-BLOC-BOX ---- */ 
+    
+    .section-bloc-box {
+        width: 400px;
+    }
+
+    .section-bloc h1 {
+        font-size: 1.4em;
+        width: 400px;
+    }
+	
+	.section-bloc h2 {
+		font-size: 1em;
+    }
+
+    .section-bloc-box h4 {
+        width: 400px;
+    }
+    
+/* ---- COACHING / FORMATION / TRANSITION BLOC & BLOC-BOX ---- */ 
+    
+    .coaching-bloc h1, .formation-bloc h1, .transition-bloc h1 {
+        width: 400px;
+        font-size: 1.4em;
+    }    
+
+    .coaching-bloc-box, .formation-bloc-box, .transition-bloc-box {
+        width: 400px;
+    }
+	
+	.coaching-bloc h2, .formation-bloc h2, .transition-bloc h2 {
+		font-size: 1em;
+    }
+    
+    .transition-bloc-box h4 {
+        width: 400px;
+    }    
+   
+  
+/* ---- PARTENAIRE ---- */    
+    
+    .partenaire {
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-auto-rows: auto;
+        padding: 0 10px;
+    }
+    
+    .partenaire h1 {
+        grid-row-start: 1;
+        grid-row-end: 2;
+        grid-column-start: 1;
+        grid-column-end: 4;
+        font-size: 1.4em;
+        width: 400px;
+    }  
+        
+    .partenaire .logo {
+        border-bottom: none;
+    } 
+
+/* ---- PAGE QUI SOMMES NOUS / NOS AGENCES / MENTIONS LEGALES ---- */
+/*
+    .presentation {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: auto;
+        column-gap: 20px;
+    }
+
+    .presentation h2 {
+        grid-row-start: 1;
+        grid-row-end: 2;
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+*/
+    .presentation-img {
+        width: 500px;
+        height: 334px;
+        background-image: url(../img/presentation768.jpg);
+        margin: 0px auto;
+    }
+
+
+/*
+    .qui-sommes-nous {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-auto-rows: auto;
+        column-gap: 20px;
+        padding: 150px 50px 50px 50px;
+    }
+
+    .intro {
+        grid-row-start: 1;
+        grid-row-end: 2;
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+
+    .presentation {
+        grid-row-start: 2;
+        grid-row-end: 3;
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+
+    .presentation h2 {
+        grid-row-start: 2;
+        grid-row-end: 3;
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+
+*/
+/*
+    .qui-sommes-nous h1 {
+        border-bottom: none;
+    }
+*/    
+/*    
+    p.first {
+        padding-top: 0px;
+        padding-right: 150px;
+    } 
+*/
+    
+    .mentions-legales h1 {
+        color: #003e57;
+        border-bottom: 1px dotted #003e57;
+        font-size: 1.5em;
+        padding-bottom: 20px;
+    }
+    
+    .mentions-legales h2 {
+        width: 100%;
+    }
+    
+    .mentions-legales p {
+        color: #003e57;
+        line-height: 1.4em;
+        padding: 5px 0px;
+        text-align: justify;
+        hyphens: auto;
+    }      
+
+/* ---- FORMULAIRE ---- */
+
+
+    .formulaire {
+        padding: 120px 20px 30px 20px;
+    }  
+  
+    .contact-formulaire {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-auto-rows: auto;
+        column-gap: 20px;
+    }
+
+    .form-control {
+        width: 330px;
+    }
+
+    .objet {
+        grid-row-start: 1;
+        grid-row-end: 2;
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+
+    .objet input {
+        width: 700px;
+    }
+    
+    .firstname {
+        grid-row-start: 2;
+        grid-row-end: 3;
+        grid-column-start: 1;
+        grid-column-end: 2;
+    }
+
+    .name {
+        grid-row-start: 2;
+        grid-row-end: 3;
+        grid-column-start: 2;
+        grid-column-end: 3;
+    }
+
+    .email {
+        grid-row-start: 3;
+        grid-row-end: 4;
+        grid-column-start: 1;
+        grid-column-end: 2;
+    }
+
+    .tel {
+        grid-row-start: 3;
+        grid-row-end: 4;
+        grid-column-start: 2;
+        grid-column-end: 3;
+    }
+
+    .msg {
+        grid-row-start: 4;
+        grid-row-end: 5;
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+    
+    .msg textarea {
+        width: 705px;
+    }
+
+    .envoyer {
+        grid-row-start: 5;
+        grid-row-end: 6;
+        grid-column-start: 1;
+        grid-column-end: 2;
+
+    }
+
+    .info {
+        grid-row-start: 4;
+        grid-row-end: 5;
+        grid-column-start: 1;
+        grid-column-end: 2;
+        margin-bottom: 20px;
+    }
+    
+/* ---- COORDONNEES ---- */
+
+.telephone h2 {
+    text-align: center;
+}
+
+/* ---- FOOTER ---- */
+
+    .footer {
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-auto-rows: auto;
+        column-gap: 20px;
+        padding: 20px 0px;
+    }
+
+    
+    .footerlist {
+        margin-left: 50px
+    }
+
+    .footerlist ul {
+        padding: 0px;
+    }
+    
+
+    .footerlist ul li a {
+	padding: 10px 0px;
+    }
+    
+}
+
+@media screen and (min-width: 1024px) {
+
+/* ---- HEADER ---- */
+    
+    .header {
+        display: grid;
+        grid-template-columns: 1fr ;
+        grid-auto-rows: auto auto auto;
+        background-color: #fff;
+        border-bottom: none;
+    }
+
+    .logo {
+        border-bottom: none;
+    }
+
+    .nav {
+        display: none;  
+    }
+
+    .navigation {
+        margin: auto;
+    }
+
+    .navigation li {
+        display: inline-block;
+        font-size: 1em;
+        padding: 10px 20px;
+    } 
+            
+    .navigation li a:hover {
+        transition-property: all;
+        transition-duration: 0.5s;
+        transition-timing-function: ease;
+        transition-delay: 0s;
+    }
+
+    .home-icone {
+        padding-bottom: 7px;
+    }
+    
+/* ---- BREADCRUMB ---- */    
+    
+    .breadcrumb {
+        padding: 169px 120px 0px 120px;
+    }
+
+    .breadcrumb-container {
+        padding: 15px 30px;
+    }
+
+
+/* ---- HERO ---- */    
+
+    .hero {
+        padding: 200px 30px 20px 30px; 
+    }
+
+    .hero h1 {
+        padding: 0px;
+    }
+
+    .hero h2, .hero p {
+        padding: 20px 0px;
+    }
+
+/* ---- SECTION-BLOC & SECTION-BLOC-BOX ---- */     
+    
+    .section-bloc {
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-auto-rows: auto;
+        column-gap: 15px;
+        padding: 30px 20px; 
+    } 
+
+    .section-bloc h1 {
+        grid-row-start: 1;
+        grid-row-end: 2;
+        grid-column-start: 1;
+        grid-column-end: 4;
+        width: 320px;
+    }
+
+    .section-bloc-box {
+        width: 320px;
+
+    } 
+
+    .section-bloc-box p {
+        padding: 20px 20px;
+    }
+
+    .section-bloc-box h4 {
+        width: 320px;
+    }  
+    
+/* ---- COACHING / FORMATION / TRANSITION BLOC & BLOC-BOX ---- */     
+    
+    .coaching-bloc {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-auto-rows: auto;
+        column-gap: 10px;
+        padding: 30px 20px; 
+    } 
+
+    .formation-bloc, .transition-bloc {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-auto-rows: auto;
+        column-gap: 15px;
+        padding: 30px 20px; 
+    } 
+
+    .coaching-bloc-box {
+        width: 400px;
+        height: 500px;
+    } 
+     
+    .formation-bloc-box, .transition-bloc-box {
+        width: 400px;
+        height: 690px;
+    } 
+
+    .formation-bloc h1, .transition-bloc h1 {
+        grid-row-start: 1;
+        grid-row-end: 2;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        width: 320px;
+    }
+
+    .transition-bloc h1 {
+        width: 400px;
+    }
+    
+    .transition-bloc-box h4 {
+        width: 400px;
+    } 
+    
+/* ---- PARTENAIRE ---- */
+
+    .partenaire h1 {
+        width: 310px;
+    }
+    
+/* ---- FICHE FORMATION ---- */
+    
+    .fiche {
+        padding: 250px 120px 20px 120px;
+    }
+
+/* ---- FORMULAIRE ---- */
+    
+    .formulaire {
+        padding: 180px 100px 30px 100px;
+    }
+    
+    .form-control {
+        width: 380px;
+    }
+    
+    .objet input {
+        width: 800px;
+    }
+
+    .msg textarea {
+        width: 800px;
+    }
+
+/* ---- COORDONNEES ---- */
+
+.coords-logo {
+    padding-top: 0px;
+}
+
+/* ---- FOOTER ---- */
+
+
+    .footerlist {
+        margin-left: 70px;
+    }
+
+/* ---- AGENCES ---- */     
+    
+.agences-bloc {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-auto-rows: auto;
+    column-gap: 15px;
+    padding: 30px 20px; 
+} 
+
+.agences-bloc h1 {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    width: 320px;
+}
+
+.agences-bloc-box {
+    width: 320px;
+
+} 
+
+.agences-bloc-box p {
+    padding: 20px 20px;
+}
+
+.agences-bloc-box h4 {
+    width: 320px;
+}     
+       
+} 
+
+@media screen and (min-width: 1440px) {
+
+/* ---- HERO ---- */ 
+    
+    .hero {
+        padding: 200px 100px 20px 100px;
+    }
+    
+    .hero-slideshow {
+        text-align: center;
+    }
+
+    .hero h1 {
+        padding: 30px 0px;
+    }
+    
+    .hero h2, .hero p {
+        padding: 30px 0px;
+    }
+    
+/* ---- BREADCRUMB ---- */
+
+    .breadcrumb {
+        padding: 169px 0px 0px 260px;
+    }
+    
+/* ---- SECTION-BLOC & SECTION-BLOC-BOX ---- */       
+
+    .section-bloc-box {
+        width: 350px;
+    }
+
+    .section-bloc h1 {
+        width: 350px;
+    }
+
+    .section-bloc-box h4 {
+        width: 350px;
+    }
+    
+/* ---- COACHING / FORMATION / TRANSITION BLOC & BLOC-BOX ---- */       
+
+    .coaching-bloc {
+        padding: 30px 200px;
+    }
+
+    .formation-bloc, .transition-bloc {
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-auto-rows: auto;
+        column-gap: 15px;
+        padding: 30px 20px; 
+    } 
+
+    .formation-bloc h1, .transition-bloc h1 {
+        grid-row-start: 1;
+        grid-row-end: 2;
+        grid-column-start: 1;
+        grid-column-end: 4;
+        width: 400px;
+    }
+
+    .coaching-bloc-box, .formation-bloc-box, .transition-bloc-box {
+        width: 400px;
+    }
+
+
+           
+    .transition-bloc-box h4 {
+        width: 400px;
+    }    
+    
+/* ---- PROMOTION ---- */    
+    
+    .promotion h2 {
+	    width: 350px;
+    }
+
+/* ---- FOOTER ---- */
+
+.footerlist {
+    margin-left: 120px;
+}
+    
+/* ---- FICHE ---- */    
+    
+    .fiche {
+        column-gap: 10px;
+        padding: 250px 200px 20px 200px;        
+    } 
+    
+    .fiche-infos-box {
+        width: 400px;
+        margin: 20px auto;
+    }
+
+    .fiche-img-container {
+        width: 400px;
+    }
+
+/* ---- FORMULAIRE ---- */
+    
+    .formulaire {
+	   padding: 180px 300px 30px 300px;
+    }
+
+    .objet input {
+        width: 810px;
+    }
+    
+    .msg textarea {
+	   width: 810px;
+    }
+
+}
+
+@media screen and (min-width: 2560px) {
+    
+    /* ---- BREADCRUMB ---- */
+
+    .breadcrumb {
+        padding: 169px 0 0 600px;
+    }
+    
+/* ---- SECTION-BLOC & SECTION-BLOC-BOX ---- */   
+    
+    .section-bloc-box {
+        width: 400px;
+    }
+
+    .section-bloc-box h4 {
+        width: 400px;
+    }
+    
+/* ---- COACHING BLOC & COACHING-BLOC-BOX ---- */   
+
+    .coaching-bloc {
+	    padding: 30px 200px;
+    }
+    
+    
+/* ---- FICHE ---- */    
+        
+    .fiche {
+        padding: 250px 0px 20px 0px;        
+    } 
+    
+    .fiche-infos-box {
+        width: 450px;
+    }
+    
+/* ---- COORDONNEES ---- */
+    
+    .coordonnees {
+        padding: 0px 250px;
+    }
+    
+    
+/* ---- FORMULAIRE ---- */    
+    
+    .formulaire {
+        padding: 180px 300px 30px 300px;
+    }
+    
+    .form-control {
+        width: 390px;
+    }
+    
+    .form-button {
+        width: 410px;
+    }
+    
+    .objet input {
+        width: 860px;
+    }
+
+    .msg textarea {
+        width: 860px;
+    }
+    
+    .thankyou {
+	width: 390px;
+}
+
+/* ---- FOOTER ---- */    
+    
+    .footer {
+        padding: 50px 200px;
+    }
+
+    .footerlist {
+        margin-left: 150px;
+    }
+    
+    
+}
+
+    
+
+
+

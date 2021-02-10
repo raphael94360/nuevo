@@ -1,0 +1,15 @@
+.page-section {
+    padding: 3rem 0;
+    background-color: #fafafa;
+
+    &__title {
+        font-size: 2rem;
+        text-align: center;
+        width: 500px;
+        background-color: $mainBlue;
+        margin: 0 auto;
+        padding: 20px 20px;
+        color: white;
+        border-radius: 3px;
+    }
+}

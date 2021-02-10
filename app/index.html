@@ -11,67 +11,130 @@
     <header>
         <a href="#"> <img src="assets/images/logo.png"> </a>
         <nav>
-            <li> <a href="#home"> <img src="assets/images/icone_home.png"> </a> </li>
+            <li> <a href="#home"> <img src="assets/images/home_icone.png"> </a> </li>
             <li> <a href="#coaching"> Coaching </a> </li>
             <li> <a href="#formation"> Formation </a> </li>
             <li> <a href="#transition"> Transition professionnelle </a> </li>
             <li> <a href="#contact"> Contact </a> </li>
         </nav>
-    </header>    
+        <!--
+        <div id="myNav" class="overlay">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="overlay-content">
+                <a href="index.php"> <img src="img/home_icone_white.png" alt="icone de la page d'accueil"/> </a>
+                <a href="coaching.php">COACHING</a>
+                <a href="formation.php">FORMATIONS </a>
+                <a href="transition.php"> TRANSITION PROFESSIONNELLE </a>
+                <a href="contact.php"> CONTACT</a>
+                <a href="https://nuevo.SC-Form.net/SofiaEDC/Candidature/ListePoles.aspx?id=2" target="_blank"> CANDIDATEZ </a> 
+            </div>
+        </div>
+        -->
+    </header>
 
-<div class="large-hero">
-    <h1> NOUS NOUS MOBILISONS POUR CONSTRUIRE ENSEMBLE VOTRE PROJET </h1>
-    <h2> &Agrave; PROPOS DE NUEVO </h2>
-    <p> <strong> Nuevo Conseil et Formation </strong> est un cabinet de conseil en ressources humaines et un organisme de formation.
-        Nos interventions se caractérisent par notre expertise, notre réactivité, notre déontologie et notre éthique.</p>
-    <img src="assets/images.carroussel.jpg" alt="image du carroussel"/>
-</div>
+    <div class="large-hero">
+        <picture>
+            <source srcset="assets/images/hero--large-i.jpg 1920w, assets/images/hero--large-dpi-i.jpg 3840w" media="(min-width: 1380px)">
+            <source srcset="assets/images/hero--medium-i.jpg 1380w, assets/images/hero--medium-dpi-i.jpg 2760w" media="(min-width: 990px)">
+            <source srcset="assets/images/hero--small-i.jpg 990w, assets/images/hero--small-dpi-i.jpg 1980w" media="(min-width: 640px)"> 
+            <img srcset="assets/images/hero--smaller-i.jpg 640w, assets/images/hero--smaller-dpi-i.jpg 1280w" class="large-hero__image" alt="jeune femme en formation"> 
+        </picture>
 
-<div id="nos-formations">
-    <h1> NOS FORMATIONS </h1>
-    <img src="img/coaching.jpg" alt="photo de la rubrique Nuevo Coaching"/>
-    <h2> COACHING </h2>
-    <p> <strong> NUEVO Coaching </strong> propose des prestations de coaching collectif pour les entreprises, que ce soit inter ou intra
-        entreprises ainsi que des prestations de coaching individuel qui s’adressent à tous types de public. </p>
-    <a href="coaching.php"> <h4> <strong> Voir les formations </strong> </h4> </a>
+        <div class="large-hero__text-content">
+            <div class="wrapper">
+                <h1 class="large-hero__title"> NOUS NOUS MOBILISONS POUR CONSTUIRE ENSEMBLE VOTRE PROJET </h1>
+                <h2 class="large-hero__subtitle"> &Agrave; PROPOS DE NUEVO </h2>
+                <p class="large-hero__description"> <strong> Nuevo Conseil et Formation </strong> est un cabinet de conseil en ressources
+                    humaines et un organisme de formation. Nos interventions se caractérisent par notre expertise, notre réactivité,
+                    notre déontologie et notre éthique. </p>
+            </div>
+        </div>
+    </div>    
 
-    <img src="img/formation.jpg" alt="photo de la rubrique Nuevo Formation"/> 
-    <h2> FORMATIONS QUALIFIANTES </h2>
-    <p> <strong> NUEVO Formations </strong> propose des formations qualifiantes dans les domaines de la vente, du sanitaire et social, dans les métiers du secrétariat, des formations linguistiques, de la remise à niveau, les métiers de la propreté et de la médiation </p>
-    <a href="formation.php"> <h4> <strong> Voir les formations </strong> </h4> </a>
-
-    <img src="img/transition.jpg" alt="photo de la rubruique Nuevo Transition Professionnelle"/>
-    <h2> TRANSITION PROFESSIONNELLE </h2>
-    <p> <strong> NUEVO Transition professionnelle </strong> a mis en place des formations dans le cadre de la transition professionnelle des salariés ou demandeurs d'emploi qui souhaitent changer d'orientation professionnelle. </p>
-    <a href="transition.php"> <h4> <strong> Voir les formations </strong> </h4> </a>   
-</div>
-          
-<div id="nos-partenaires"> 
-    <h1> NOS PARTENAIRES </h1>
-    <img src="img/logoCRIDF.png" alt="logo de l'Ile-de-France"/>
-    <img src="img/LogoPoleEmploi.png" alt="logo de Pole Emploi">
-    <img src="img/LogoSSD.png" alt="logo du département Seine Saint Denis"/>
-</div>        
+    <div class="page-section">
+        <div class="wrapper">
+            <div class="formation-intro">
+                <h1 class="page-section__title"> NOS FORMATIONS </h1>
+                <div class="row">
+                    <div class="row__large-4"> 
+                        <img src="assets/images/coaching.jpg" alt="photo de la rubrique Nuevo Coaching"/>
+                        <h2> COACHING </h2>
+                        <p> <strong> NUEVO Coaching </strong> propose des prestations de coaching collectif pour les entreprises, que ce soit inter ou intra
+                            entreprises ainsi que des prestations de coaching individuel qui s’adressent à tous types de public. </p>
+                        <a href="coaching.php"> <h4> <strong> Voir les formations </strong> </h4> </a>
+                    </div>
+    
+                    <div class="row__large-4">
+                        <img src="assets/images/formation.jpg" alt="photo de la rubrique Nuevo Formation"/> 
+                        <h2> FORMATIONS QUALIFIANTES </h2>
+                        <p> <strong> NUEVO Formations </strong> propose des formations qualifiantes dans les domaines de la vente, du sanitaire et social, dans les métiers du secrétariat, des formations linguistiques, de la remise à niveau, les métiers de la propreté et de la médiation </p>
+                        <a href="formation.php"> <h4> <strong> Voir les formations </strong> </h4> </a>
+                    </div>
+    
+                    <div class="row__large-4">
+                        <img src="assets/images/transition.jpg" alt="photo de la rubruique Nuevo Transition Professionnelle"/>
+                        <h2> TRANSITION PROFESSIONNELLE </h2>
+                        <p> <strong> NUEVO Transition professionnelle </strong> a mis en place des formations dans le cadre de la transition professionnelle des salariés ou demandeurs d'emploi qui souhaitent changer d'orientation professionnelle. </p>
+                        <a href="transition.php"> <h4> <strong> Voir les formations </strong> </h4> </a>
+    
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+   
+    <div class="page-section">
+        <div class="wrapper">
+            <div class="partenaires">
+                <h1 class="page-section__title"> NOS PARTENAIRES </h1>
+                <div class="row">
+                    <div class="row__large-4">
+                        <img src="assets/images/logoCRIDF.png" alt="logo de l'Ile-de-France"/>
+                    </div>
+                    <div class="row__large-4">
+                        <img src="assets/images/LogoPoleEmploi.png" alt="logo de Pole Emploi">
+                    </div>
+                    <div class="row__large-4">
+                        <img src="assets/images/LogoSSD.png" alt="logo du département Seine Saint Denis"/>
+                    </div>                  
+                </div>
+            </div> 
+        </div>
+   </div>       
+       
         
-<div id="nos-formation-a-la-une">
-    <h1> FORMATIONS A LA UNE </h1>
-    <img src="img/bilan.jpg" alt="photo de la formation bilan de compétence">
-    <h2> BILAN DE COMP&Eacute;TENCES </h2>
-    <p> <strong> Le bilan de compétences </strong> est outil de pilotage professionnel, un moment privilégié visant à l’élaboration d’un projet professionnel. </p>
-    <a href="transition-professionnelle/bilan-de-competences.php"> <h4> <strong> Voir la formation </strong> </h4> </a>
+   <div class="page-section">
+       <div class="wrapper">
+        <div class="formation-mois">
+            <h1 class="page-section__title"> FORMATIONS A LA UNE </h1>
+            <div class="row">
+                <div class="row__large-4">
+                    <img src="assets/images/bilan.jpg" alt="photo de la formation bilan de compétence">
+                    <h2> BILAN DE COMP&Eacute;TENCES </h2>
+                    <p> <strong> Le bilan de compétences </strong> est outil de pilotage professionnel, un moment privilégié visant à l’élaboration d’un projet professionnel. </p>
+                    <a href="transition-professionnelle/bilan-de-competences.php"> <h4> <strong> Voir la formation </strong> </h4> </a>
+                </div>
+    
+                <div class="row__large-4"> 
+                    <img src="assets/images/assistant-de-vie.jpg" alt="photo de la formation assistante de vie aux familles"/>
+                    <h2> ASSISTANT(E) DE VIE AUX FAMILLES </h2>
+                    <p> <strong> l'assistant(e) de vie aux familles </strong> intervient pour faciliter la vie quotidienne de personnes dites &#171; fragilisées &#187; comme les personnes âgées, malades ou handicapées, de familles avec de jeunes enfants ou tout simplement de toute personne qui les sollicite. </p>
+                    <a href="formation-sanitaire-et-social/assistante-de-vie.php"> <h4> <strong> Voir la formation </strong> </h4> </a>
+                </div>
+    
+                <div class="row__large-4">
+                    <img src="assets/images/activ-crea.jpg" alt="photo de la formation activ créa "/> 
+                    <h2> ACTIV'CR&Eacute;A </h2>
+                    <p> <strong> Activ'Créa </strong> est la prestation de référence pour l'accompagnement à la création d'entreprise des demandeurs d'emploi. </p>
+                    <a href="transition-professionnelle/activ-crea.php"> <h4> <strong> Voir la formation </strong> </h4> </a>
+                </div>
+            </div>
+        </div>
+   </div>
 
-    <img src="img/assistant-de-vie.jpg" alt="photo de la formation assistante de vie aux familles"/>
-    <h2> ASSISTANT(E) DE VIE AUX FAMILLES </h2>
-    <p> <strong> l'assistant(e) de vie aux familles </strong> intervient pour faciliter la vie quotidienne de personnes dites &#171; fragilisées &#187; comme les personnes âgées, malades ou handicapées, de familles avec de jeunes enfants ou tout simplement de toute personne qui les sollicite. </p>
-    <a href="formation-sanitaire-et-social/assistante-de-vie.php"> <h4> <strong> Voir la formation </strong> </h4> </a>
-
-    <img src="img/activ-crea.jpg" alt="photo de la formation activ créa "/> 
-    <h2> ACTIV'CR&Eacute;A </h2>
-    <p> <strong> Activ'Créa </strong> est la prestation de référence pour l'accompagnement à la création d'entreprise des demandeurs d'emploi. </p>
-    <a href="transition-professionnelle/activ-crea.php"> <h4> <strong> Voir la formation </strong> </h4> </a>
   
 <div id="nos-coordonnees">
-    <img src="img/coords-logo.png" class="coords-logo-img" alt="logo de Nuevo Formation et Conseil"/> </div>
+    <img src="assets/images/coords-logo.png" class="coords-logo-img" alt="logo de Nuevo Formation et Conseil"/> </div>
     <p> 6, rue Vincent Van Gogh </p>
     <p> 93360 NEUILLY PLAISANCE </p>
     <p> 01 86 95 50 10 </p>
