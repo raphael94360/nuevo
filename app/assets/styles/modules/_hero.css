@@ -1,34 +1,5 @@
 .hero {
-    position : relative;
 
-    &__image {
-        display: block;
-    }
-
-    &__text-content {
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        left: 0;
-        width: 100%;
-        text-align: left;
-        background-color: rgba(255,255,255,0.3);
-        border-radius: 5px; 
-
-        @mixin atSmall {
-            width: 50%;
-        }
-
-        @mixin atMedium {
-            width: 40%;
-        }
-
-        @mixin atLarge {
-            left: 100px;
-        }
-
-        
-    }
 
     &__title {
         font-weight: 800;
@@ -36,13 +7,6 @@
         font-size: 1.2rem;
         margin-bottom: 10px;
 
-        @mixin atSmall {
-            font-size: 1.2rem;
-        }
-
-        @mixin atLarge {
-            font-size: 1.6rem;
-        }
     }
 
     &__subtitle {
@@ -50,10 +14,6 @@
         color: $mainBlue;
         font-size: 0.9rem;
         margin: 0;
-
-        @mixin atSmall {
-            font-size: 1rem;
-        }
     }
 
     &__description {
@@ -62,15 +22,5 @@
         font-size: 0.9rem;
         line-height: 1.2rem;
 
-        @mixin atSmall {
-            font-weight: 500;
-            font-size: 1rem;
-            line-height: 1.3rem;
-        }
-
-        @mixin atLarge {
-            font-size: 1.2rem;
-            line-height: 1.5rem;
-        }
     }
 }

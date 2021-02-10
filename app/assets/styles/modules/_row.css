@@ -7,12 +7,6 @@
         }
     }
 
-    @mixin atLarge {
-        &__large-4 {
-            float: left;
-            width: 33.33%;
-
-        }
     }
 
     @mixin clearfix;
