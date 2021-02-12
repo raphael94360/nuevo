@@ -1,10 +1,8 @@
 .page-section {
     padding: 1rem 0;
-    /*background-color: #fafafa;*/
-    /*background-color: red;*/
 
     @mixin atSmall {
-        padding: 3rem 0;
+        padding: 1rem 0;
     }
 
     &__title {
@@ -21,13 +19,17 @@
         border-radius: 5px;
 
         @mixin atSmall {
-            font-size: 1.6rem;
             width: 60%;
         }
 
         @mixin atMedium {
-            width: 40%;
+            font-size: 1.2rem; 
             margin-bottom: 50px;
+            width: 33.33%;
+        }
+
+        @mixin atLarge {
+            font-size: 1.3rem;
         }
     }
 }
