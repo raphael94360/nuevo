@@ -48,10 +48,17 @@
     &__link--a {
         text-decoration: none;
         color: $mainBlue;
+        font-weight: 300;
+        background-color: white;
+        padding: 15px;
+        border-radius: 3px;
+        border: 1px solid $mainBlue;
     }
 
     a:hover {
-        color: red;
+        color: $secondaryBlue;
+        background-color: $mainBlue;
+        border: 1px solid $mainBlue;
     }
 
 }

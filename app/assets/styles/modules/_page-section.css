@@ -1,8 +1,8 @@
 .page-section {
     padding: 1rem 0;
 
-    @mixin atSmall {
-        padding: 1rem 0;
+    @mixin atMedium {
+        padding: 2rem 0;
     }
 
     &__title {
@@ -31,5 +31,9 @@
         @mixin atLarge {
             font-size: 1.3rem;
         }
+    }
+
+    &__background-color {
+        background-color: #e9e9e9;
     }
 }
