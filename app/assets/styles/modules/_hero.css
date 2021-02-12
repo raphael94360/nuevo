@@ -1,26 +1,36 @@
 .hero {
 
-
     &__title {
         font-weight: 800;
         color: $mainBlue;
-        font-size: 1.2rem;
-        margin-bottom: 10px;
+        font-size: 1.3rem;
+        margin-bottom: 20px;
 
+        @mixin atSmall {
+            font-size: 1.6rem;
+        }
     }
 
     &__subtitle {
         font-weight: 800;
         color: $mainBlue;
-        font-size: 0.9rem;
-        margin: 0;
+        font-size: 1.1rem;
+        margin-bottom: 20px;
+
+        @mixin atSmall {
+            font-size: 1.2rem;
+        }
     }
 
     &__description {
         color: $mainBlue;
-        font-weight: 800;
+        font-weight: 400;
         font-size: 0.9rem;
-        line-height: 1.2rem;
+        line-height: 1.3rem;
 
+        @mixin atSmall {
+            font-size: 1.2rem;
+            line-height: 1.5rem;
+        }
     }
 }

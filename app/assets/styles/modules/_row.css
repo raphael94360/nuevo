@@ -1,13 +1,38 @@
 .row {
 
+    /*background-color: yellow;*/
+
+    @mixin clearfix;
+
+    &--gutters {
+        margin-right: -50px;
+    }
+
+    &--gutters > div {
+        padding-right: 50px;
+    }
+
     @mixin atMedium {
         &__medium-6 {
             float: left;
             width: 50%;
         }
+    
+        &__medium-4 {
+            float: left;
+            width: 33.33%;
+        }
     }
 
-    }
+    /* begin equal height rules*/
+    &--equal-height-at-medium {
+        @mixin atMedium {
+            display: flex;
+        }
 
-    @mixin clearfix;
+        & > div {
+            float: none;
+            display: flex;
+        }
+    }
 }

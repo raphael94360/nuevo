@@ -2,13 +2,13 @@
 @import 'base/_global';
 @import 'base/_variables';
 @import 'base/_mixins';
-@import 'modules/_large-hero';
+@import 'modules/_hero';
 @import 'modules/_title';
 @import 'modules/_row';
 @import 'modules/_wrapper';
 @import 'modules/_page-section';
-@import 'modules/_formation-intro';
-@import 'modules/_partenaires';
-@import 'modules/_formation-mois';
+@import 'modules/_card';
+
+
 
 
