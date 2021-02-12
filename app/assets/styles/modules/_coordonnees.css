@@ -9,6 +9,7 @@
     }
 
     &__logo {
+        margin-top: 20px;
         margin-right: auto;
         margin-left: auto;
     }

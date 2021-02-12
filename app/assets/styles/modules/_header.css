@@ -1,0 +1,72 @@
+.header {
+
+    &__logo {
+        display: block;
+        margin-right: auto;
+        margin-left: auto;
+
+        @mixin atMedium {
+            margin-bottom: 20px;
+        }
+    }
+
+    &__navigation {
+        list-style-type: none;
+        text-align: center;
+        padding: 0;
+        margin-bottom: 30px;
+    }
+
+    &__icone {
+        display: inline;
+    }
+
+    ul > li {
+        display: inline;
+    }
+
+    li > a {
+        text-decoration: none;
+        font-size: 1.2rem;
+        color: $mainBlue;
+        padding: 10px;
+    }
+
+    a:hover {
+        color: $secondaryBlue;
+    }
+
+    &__candidat {
+        background-color: $mainBlue;
+        border: none;
+        border-radius: 3px;
+        padding: 10px 20px;
+    }
+
+    &__candidat--a {
+        text-decoration: none;
+        color: white;
+    }
+
+    &__menu-icon {
+        width: 20px;
+        height: 20px;
+        background-color: $mainBlue;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+
+        @mixin atMedium {
+            display: none;
+        }
+    }
+
+    &__content {
+        display: none;
+
+        @mixin atMedium {
+            display: block;
+        }
+    }
+
+}
