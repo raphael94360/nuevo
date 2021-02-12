@@ -1,16 +1,11 @@
 .page-section {
-    padding: 1rem 0;
-
-    &--padding-b-none {
-        padding-bottom: 0;
-    }
 
     &--background-motif {
         background-image: url(assets/images/motif_hover.png);
     }
 
-    @mixin atMedium {
-        padding: 2rem 0;
+    &--background-color {
+        background-color: #e9e9e9;
     }
 
     &__title {
@@ -22,6 +17,7 @@
         margin-right: auto;
         margin-left: auto;
         margin-bottom: 20px;
+        margin-top: 20px;
         padding: 20px 20px;
         color: white;
         border-radius: 5px;
@@ -41,7 +37,5 @@
         }
     }
 
-    &--background-color {
-        background-color: #e9e9e9;
-    }
+
 }

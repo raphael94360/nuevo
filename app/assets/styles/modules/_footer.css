@@ -1,7 +1,6 @@
 .footer {
+
     background-color: $mainBlue;
-    padding-top: 20px;
-    padding-bottom: 20px;
 
     &__title {
         color: $secondaryBlue;
@@ -37,4 +36,8 @@
     a:hover {
         color: $secondaryBlue;
     }
+
+    
+
+
 }
