@@ -2,21 +2,41 @@
     background-color: white;
     border-radius: 5px;
     border: 0.01rem dashed $mainBlue;
+    margin-bottom: 20px;
+
+    @mixin atSmall {
+        width: 60%;
+        margin-right: auto;
+        margin-left: auto;
+        margin-bottom: 30px;
+    }
+
+    @mixin atMedium {
+        width: 100%;
+    }
 
     &__title {
-        font-size: 1.2rem;
+        font-size: 0.9rem;
         color: $mainBlue;
         text-align: center;
         margin: 0;
         padding: 10px;
+
+        @mixin atMedium {
+            font-size: 1rem;
+        }
     }
 
     &__text {
-        font-size: 1rem;
+        font-size: 0.9rem;
         padding-left: 15px;
         padding-right: 15px;
         color: $mainBlue;
         line-height: 1.5rem;
+
+        @mixin atMedium {
+            font-size: 1rem;
+        }
     }
 
     &__link {

@@ -5,11 +5,11 @@
     @mixin clearfix;
 
     &--gutters {
-        margin-right: -50px;
+        margin-right: -30px;
     }
 
     &--gutters > div {
-        padding-right: 50px;
+        padding-right: 30px;
     }
 
     @mixin atMedium {

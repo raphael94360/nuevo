@@ -21,7 +21,13 @@
         border-radius: 5px;
 
         @mixin atSmall {
-            font-size: 1.8rem;
+            font-size: 1.6rem;
+            width: 60%;
+        }
+
+        @mixin atMedium {
+            width: 40%;
+            margin-bottom: 50px;
         }
     }
 }
