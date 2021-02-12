@@ -9,14 +9,24 @@
 </head>
 <body>  
     <header>
-        <a href="#"> <img src="assets/images/logo.png"> </a>
-        <nav>
-            <li> <a href="#home"> <img src="assets/images/home_icone.png"> </a> </li>
-            <li> <a href="#coaching"> Coaching</a> </li>
-            <li> <a href="#formation"> Formation </a> </li>
-            <li> <a href="#transition"> Transition professionnelle </a> </li>
-            <li> <a href="#contact"> Contact </a> </li>
-        </nav>
+        <div class="wrapper">
+            <div class="header">
+                <div> <a href="#"> <img src="assets/images/logo.png" class="header__logo"> </a> </div>
+                <div class="header__menu-icon"></div>
+                
+                <nav class="header__content">
+                    <ul class="header__navigation">
+                        <li> <a href="#home"> <img src="assets/images/home_icone.png" class="header__icone"> </a> </li>
+                        <li> <a href="#coaching"> COACHING </a> </li>
+                        <li> <a href="#formation"> FORMATION </a> </li>
+                        <li> <a href="#transition"> TRANSITION PROFESSIONNELLE </a> </li>
+                        <li> <a href="#contact"> CONTACT </a> </li>
+                        <button class="header__candidat"> <a href="#candidatez" class="header__candidat--a"> CANDIDATEZ </a> </button>
+                    </ul>        
+                </nav>
+            </div>
+        </div>
+
         <!--
         <div id="myNav" class="overlay">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
@@ -32,6 +42,11 @@
         -->
     </header>
 
+<<<<<<< HEAD
+=======
+
+    <!-- HERO -->
+>>>>>>> header
     <div class="page-section page-section--background-color"> 
         <div class="hero">
             <div class="wrapper">
@@ -44,13 +59,14 @@
                             notre déontologie et notre éthique. </p>
                     </div>
                     <div class="row__medium-6">
-                        <img src="assets/images/hero--image.jpg" class="hero__image" alt=""/>
+                        <img src="assets/images/hero--image.jpg" class="hero__image wrapper--no-lr-padding" alt=""/>
                     </div>
                 </div>
             </div>
         </div>    
     </div>    
  
+    <!-- FORMATION -->
     <div class="page-section page-section--background-motif">
         <div class="wrapper">
             <h1 class="page-section__title"> NOS FORMATIONS </h1>
@@ -84,7 +100,8 @@
         </div>
     </div>
    
-    <div class="page-section page-section--background-color">
+   <!-- PARTENAIRES --> 
+   <div class="page-section page-section--background-color">
         <div class="wrapper">
                 <h1 class="page-section__title"> NOS PARTENAIRES </h1>
                 <div class="row row--gutters">
@@ -101,7 +118,7 @@
         </div>
    </div>       
        
-        
+   <!-- FORMATION A LA UNE -->    
    <div class="page-section page-section--background-motif">
        <div class="wrapper">
             <h1 class="page-section__title"> FORMATIONS A LA UNE </h1>
@@ -135,6 +152,7 @@
         </div>
     </div>    
 
+   <!-- COORDONNEES -->
    <div class="page-section page-section--background-color">
         <div class="wrapper">
             <div class="row">
