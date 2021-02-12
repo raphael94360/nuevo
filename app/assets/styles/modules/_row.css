@@ -1,7 +1,5 @@
 .row {
 
-    /*background-color: yellow;*/
-
     @mixin clearfix;
 
     &--gutters {
@@ -10,6 +8,13 @@
 
     &--gutters > div {
         padding-right: 30px;
+    }
+
+    @mixin atSmall {
+        &__small-4 {
+            float: left;
+            width: 33.33%;
+        }
     }
 
     @mixin atMedium {
