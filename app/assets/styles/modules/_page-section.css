@@ -5,6 +5,10 @@
         padding-bottom: 0;
     }
 
+    &--background-motif {
+        background-image: url(assets/images/motif_hover.png);
+    }
+
     @mixin atMedium {
         padding: 2rem 0;
     }
