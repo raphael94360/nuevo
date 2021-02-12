@@ -1,0 +1,11 @@
+.coordonnees {
+
+    display: block;
+    text-align: center;
+
+    &__phone {
+        font-size: 2rem;
+        color: $mainBlue;
+    }
+
+}
