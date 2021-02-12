@@ -35,4 +35,8 @@
             line-height: 1.5rem;
         }
     }
+
+    &__image {
+        border-radius: 7px;
+    }
 }
