@@ -8,4 +8,9 @@
         color: $mainBlue;
     }
 
+    &__logo {
+        margin-right: auto;
+        margin-left: auto;
+    }
+
 }
