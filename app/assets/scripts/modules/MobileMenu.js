@@ -1,3 +1,4 @@
+/*
 class MobileMenu {
   constructor() {
 
@@ -16,3 +17,4 @@ class MobileMenu {
 }
 
 export default MobileMenu;
+*/
