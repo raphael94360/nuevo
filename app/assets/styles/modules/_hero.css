@@ -1,5 +1,12 @@
 .hero {
 
+    padding-top: 400px;
+
+    @mixin atMedium {
+        padding-top: 170px;
+    }
+
+
 
     &__title {
         font-weight: 800;
@@ -11,6 +18,7 @@
         @mixin atSmall {
             font-size: 1.4rem;
         }
+
     }
 
     &__subtitle {
