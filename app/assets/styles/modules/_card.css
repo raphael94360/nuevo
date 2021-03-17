@@ -1,7 +1,7 @@
 .card {
     background-color: white;
     border-radius: 5px;
-    border: 0.01rem dashed $mainBlue;
+    border: thin solid $mainBlue;
     margin-bottom: 20px;
 
     @mixin atSmall {

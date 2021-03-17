@@ -1,23 +1,25 @@
 .page-section {
 
+
     &--background-motif {
         background-image: url(assets/images/motif_hover.png);
     }
 
     &--background-color {
-        background-color: #e9e9e9;
+        background-color: #f7f7f7;
     }
 
     &__title {
         font-size: 1.1rem;
         font-weight: 300;
         text-align: center;
+
         width: 100%;
         background-color: $mainBlue;
         margin-right: auto;
         margin-left: auto;
         margin-bottom: 20px;
-        margin-top: 20px;
+        margin-top: 40px;
         padding: 20px 20px;
         color: white;
         border-radius: 5px;

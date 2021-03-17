@@ -9,7 +9,7 @@
         margin-top: 20px;
 
         @mixin atSmall {
-            font-size: 1.5rem;
+            font-size: 1.4rem;
         }
     }
 
@@ -20,7 +20,7 @@
         margin-bottom: 20px;
 
         @mixin atSmall {
-            font-size: 1.2rem;
+            font-size: 1.1rem;
         }
     }
 
@@ -31,7 +31,7 @@
         line-height: 1.3rem;
 
         @mixin atSmall {
-            font-size: 1.1rem;
+            font-size: 1rem;
             line-height: 1.5rem;
         }
     }
