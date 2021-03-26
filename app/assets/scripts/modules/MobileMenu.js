@@ -1,9 +1,9 @@
-/*
+
 class MobileMenu {
   constructor() {
 
     this.menuIcon = document.querySelector('.header__menu-icon');
-    this.menuContent = document.querySelector('.header__content');
+    this.menuContent = document.querySelector('.header__menu-content');
     this.events();
   }
 
@@ -12,9 +12,8 @@ class MobileMenu {
   }
 
   toggleTheMenu() {
-    this.menuContent.classList.toggle('header__content--is-visible')
+    this.menuContent.classList.toggle('header__menu-content--is-visible')
   }
 }
 
 export default MobileMenu;
-*/
