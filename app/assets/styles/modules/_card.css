@@ -1,7 +1,7 @@
 .card {
     background-color: white;
     border-radius: 5px;
-    border: thin solid $mainBlue;
+    border: thin solid #ccc;
     margin-bottom: 20px;
 
     @mixin atSmall {
@@ -17,14 +17,13 @@
 
     &__title {
         font-size: 0.9rem;
-        color: $mainBlue;
+        font-weight: 100;
+        color: white;
         text-align: center;
         margin: 0;
         padding: 10px;
+        background-color: $mainBlue;
 
-        @mixin atMedium {
-            font-size: 1rem;
-        }
     }
 
     &__text {
@@ -33,10 +32,6 @@
         padding-right: 15px;
         color: $mainBlue;
         line-height: 1.5rem;
-
-        @mixin atMedium {
-            font-size: 1rem;
-        }
     }
 
     &__link {
