@@ -1,12 +1,14 @@
 .hero {
 
     padding-top: 100px;
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> header
     @mixin atMedium {
         padding-top: 190px;
     }
-
-
 
     &__title {
         font-weight: 800;

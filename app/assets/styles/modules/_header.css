@@ -1,15 +1,20 @@
 .header {
   position: fixed;
-  z-index: 2;
-  background-color: white;
+  z-index: 2; 
   width: 100%;
+  /*
+  background-color: white; 
+  */
 
 
 
   &__logo {
-    display: block;
-    margin-right: auto;
-    margin-left: auto;
+    background-color: white;
+      &--img {
+        display: block;
+        margin-right: auto;
+        margin-left: auto;
+      }
   }
 /*
   &__nav {
@@ -21,6 +26,7 @@
 
   &__list {
     text-align: center;
+<<<<<<< HEAD
 /*  padding-bottom: 550px; */
     padding-left: 0; 
 
@@ -30,16 +36,36 @@
       padding-bottom: 0;
     }
 
+=======
+    margin: 0 0;
+    padding: 40px 0 40px 0;
+    /*
+    background-color: rgba($mainBlue, 1); 
+    transition: background-color .3s ease-out;
+     */
+
+    @mixin atMedium {
+      background-color: white;
+      padding: 10px 0 30px 0;
+    }
+>>>>>>> header
   }
 
   &__list > li {
     display: block;
     padding: 10px;
+<<<<<<< HEAD
 
     @mixin atMedium {
       display: inline;
       padding: 10px;
     }
+=======
+      @mixin atMedium {
+        display: inline;
+        padding: 10px;
+      }
+>>>>>>> header
   }
 
   &__list--icone {
@@ -48,20 +74,29 @@
 
   &__list > li a {
     font-size: 0.8rem;
+    font-weight: 500;
     text-decoration: none;
     color: white;
     font-weight: 300;
 
+<<<<<<< HEAD
     @mixin atMedium {
       font-size: 1.1rem;
       color: $mainBlue;
     }
+=======
+      @mixin atMedium {
+        font-size: 1rem;
+        color: $mainBlue;
+      }
+>>>>>>> header
   }
 
   &__list > li a:hover {
     color: $secondaryBlue;
   }
 
+<<<<<<< HEAD
   &__menu-content {
     display: none;  
 
@@ -76,6 +111,8 @@
     }
   }
 
+=======
+>>>>>>> header
   &__menu-icon {
     width: 20px;
     height: 20px;
@@ -89,5 +126,39 @@
     }
   }
 
+<<<<<<< HEAD
+=======
+  &__menu-content {
+    /*
+    display: none;
+    */
+    
+    opacity: 0;
+    background-color: white;
+    transition: opacity .5s ease-out;
+    position: relative;
+    z-index: -10;
+    
+    @mixin atMedium {
+      opacity: 1;
+      z-index: 1;
+    }
+
+    &--is-visible {
+      opacity: 1;
+      z-index: 1;
+
+      /*
+      display: block;
+      /*
+      transition: background-color .5s ease-out;
+      background-color: red;
+      */
+    }
+
+  }
+
+  
+>>>>>>> header
   
 }
