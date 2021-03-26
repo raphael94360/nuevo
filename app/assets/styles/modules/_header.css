@@ -4,28 +4,42 @@
   background-color: white;
   width: 100%;
 
+
+
   &__logo {
     display: block;
     margin-right: auto;
     margin-left: auto;
   }
+/*
+  &__nav {
+    background-color: red;
+    transition: background-color 3s ease-out;
 
+  }
+ */ 
 
   &__list {
     text-align: center;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    padding: 0;
+/*  padding-bottom: 550px; */
+    padding-left: 0; 
+
+    @mixin atMedium {
+      margin-top: 30px;
+      margin-bottom: 30px;
+      padding-bottom: 0;
+    }
+
   }
 
   &__list > li {
     display: block;
     padding: 10px;
 
-      @mixin atMedium {
-        display: inline;
-        padding: 10px;
-      }
+    @mixin atMedium {
+      display: inline;
+      padding: 10px;
+    }
   }
 
   &__list--icone {
@@ -35,17 +49,45 @@
   &__list > li a {
     font-size: 0.8rem;
     text-decoration: none;
-    color: $mainBlue;
+    color: white;
+    font-weight: 300;
 
-      @mixin atMedium {
-        font-size: 1.1rem;
-      }
+    @mixin atMedium {
+      font-size: 1.1rem;
+      color: $mainBlue;
+    }
   }
 
   &__list > li a:hover {
     color: $secondaryBlue;
   }
 
-  
+  &__menu-content {
+    display: none;  
+
+    @mixin atMedium {
+      display: block;
+    }
+    
+    &--is-visible {
+    display: block;   
+    background-color: $mainBlue;
+    transition: background-color .3s ease-out;
+    }
+  }
+
+  &__menu-icon {
+    width: 20px;
+    height: 20px;
+    background-color: $mainBlue;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+
+    @mixin atMedium {
+      display: none;
+    }
+  }
+
   
 }
