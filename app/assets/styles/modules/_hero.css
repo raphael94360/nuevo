@@ -1,6 +1,5 @@
 .hero {
 
-    padding-top: 100px;
     
     @mixin atMedium {
         padding-top: 194px;
