@@ -1,10 +1,5 @@
 .hero {
 
-    
-    @mixin atMedium {
-        padding-top: 194px;
-    }
-
     &__title {
         font-weight: 800;
         color: $mainBlue;
