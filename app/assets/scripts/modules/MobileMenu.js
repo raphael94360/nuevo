@@ -12,6 +12,7 @@ class MobileMenu {
   }
 
   toggleTheMenu() {
+    console.log('test');
     this.menuContent.classList.toggle('header__menu-content--is-visible')
   }
 }
