@@ -2,6 +2,7 @@
 
   &--pull-right {
     float: right;
+    padding-top: 40px;
   }
 
   ul {
