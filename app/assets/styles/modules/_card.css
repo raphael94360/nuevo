@@ -35,25 +35,36 @@
     }
 
     &__link {
+        display: block;
+        margin: 40px auto;
+        width: 250px;
         font-size: 1rem; 
-        padding: 20px; 
         text-align: center;  
+        transition: transform .2s ease-in-out;
+        border-radius: 3px;
+        border: 1px solid $mainBlue;
+        padding: 15px;
+        background-color: white;
+
+    }
+
+    &__link:hover {
+        background-color: $mainBlue;
+        transform: scale(1.1);
     }
 
     &__link--a {
         text-decoration: none;
         color: $mainBlue;
         font-weight: 300;
-        background-color: white;
         padding: 15px;
-        border-radius: 3px;
-        border: 1px solid $mainBlue;
     }
-
+    
     a:hover {
-        color: $secondaryBlue;
-        background-color: $mainBlue;
-        border: 1px solid $mainBlue;
+        color: white;
+        /*
+        transform: scale(1.5);
+        */
     }
-
+    
 }
