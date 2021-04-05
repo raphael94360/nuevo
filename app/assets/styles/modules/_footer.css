@@ -23,6 +23,7 @@
         text-decoration: none;
         line-height: 1.7rem;
         font-size: 0.8rem;
+        font-weight: 100;
 
         @mixin atSmall {
             font-size: 0.7rem;

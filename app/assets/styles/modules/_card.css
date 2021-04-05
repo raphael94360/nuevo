@@ -39,32 +39,21 @@
         margin: 40px auto;
         width: 250px;
         font-size: 1rem; 
+        color: $mainBlue;
         text-align: center;  
-        transition: transform .2s ease-in-out;
-        border-radius: 3px;
+        text-decoration: none;
         border: 1px solid $mainBlue;
         padding: 15px;
+
+        transition: transform .2s ease-in-out;
         background-color: white;
 
     }
 
     &__link:hover {
+        color: white;
         background-color: $mainBlue;
         transform: scale(1.1);
     }
 
-    &__link--a {
-        text-decoration: none;
-        color: $mainBlue;
-        font-weight: 300;
-        padding: 15px;
-    }
-    
-    a:hover {
-        color: white;
-        /*
-        transform: scale(1.5);
-        */
-    }
-    
 }
