@@ -5,11 +5,14 @@
   z-index: 2;
   transition: background-color .3s ease-out;
 
+
+
   &--is-expanded {
     background-color: white;
   }
 
   @mixin atMedium {
+    position: fixed;
     background-color: white;
   }
  
@@ -114,5 +117,5 @@
 
   }
 
-
 }
+
