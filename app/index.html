@@ -3,35 +3,33 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href='https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap' rel='stylesheet' type='text/css'>
+    <script src="https://kit.fontawesome.com/270dfbc426.js" crossorigin="anonymous"></script>
     <title> NUEVO - FORMATION ET CONSEIL</title>
     <meta name="keywords" content="Formation, Conseil, Ile-de-France, région parisienne">
     <meta name="description" content="Nous nous mobilisons pour construire ensemble votre projet">
 </head>
 <body>  
 
-    <header class="header">
+    <header>
 
-        <div class="header__logo">
-            <img src="assets/images/logo.png" alt="" class="header__logo--img">
+        <div class="row">
+            <a href="#main-menu" class="menu-toggle" aria-label="Open main menu"> <span class="fa fa-bars"> </span> </a>
+            <div class="logo">
+                <img src="assets/images/logo.png" alt="" class="header__logo--img">
+            </div>
         </div>
 
-        <div class="header__menu-icon"></div>
-         
-            <div class="header__menu-content">
-                <nav class="header__nav">
-                    <ul class="header__list">
-                        <li> <a href="#home"> <img src="assets/images/home_icone.png" class="header__list--icone"> </a> </li>
-                        <li> <a href="#coaching"> COACHING </a> </li>
-                        <li> <a href="#formation"> FORMATION </a> </li>
-                        <li> <a href="#transition"> TRANSITION PROFESSIONNELLE </a> </li>
-                        <li> <a href="#contact"> CONTACT </a> </li>
-                        <li class="header__list--candidat"> <a href="#candidatez"> CANDIDATEZ </a> </li>
-                    </ul>        
-                </nav>
-            </div>
-
-
-
+        <nav id="main-menu" class="main-menu"> <a href="#main-menu-toggle" class="menu-close"> <span class="fa fa-close"></span></a>
+            <ul>
+                <li> <a href="#home"> <img src="assets/images/home_icone.png" class="header__list--icone"> </a> </li>
+                <li> <a href="#coaching"> COACHING </a> </li>
+                <li> <a href="#formation"> FORMATION </a> </li>
+                <li> <a href="#transition"> TRANSITION PROFESSIONNELLE </a> </li>
+                <li> <a href="#contact"> CONTACT </a> </li>
+                <li class="header__list--candidat"> <a href="#candidatez"> CANDIDATEZ </a> </li>
+            </ul>        
+        </nav>
+        <a href="#main-menu-toggle" class="backdrop" hidden> </a>
     </header>
 
     <div class="page-section page-section--background-color"> 

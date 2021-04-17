@@ -1,108 +1,90 @@
-.header {
+header .row {
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.menu-toggle {
+  color: $mainBlue;
+  margin-right: 1rem;
+}
+
+.menu-toggle:hover, 
+.menu-toggle:focus {
+  color: $secondaryBlue;
+}
+
+.main-menu {
   position: fixed;
-  z-index: 2; 
+  left: -300px;
+  top: 0;
+  height: 100%;
+  overflow-x: visible;
+  transition: left 0.4s ease-in;
+  z-index: 999;
+}
+
+.main-menu ul {
+  list-style: none;
+  margin: 0;
+  padding-top: 5em;
+  min-height: 100%;
+  width: 300px;
+  background-color: #1a1a1a;
+}
+
+.main-menu a {
+  display: block;
+  padding: 0.75em;
+  color: white;
+  font-weight: 300;
+  text-decoration: none;
+  border-bottom: 1px solid #383838; 
+}
+
+a.menu-close {
+  border: none;
+}
+
+.main-menu li:first-child a {
+  border-top: 1px solid #383838;
+
+}
+
+.main-menu a:hover,
+.main-menu a:focus {
+  background: #333;
+  color: #C85028;
+}
+
+.main-menu .menu-close {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.main-menu:target {
+  /* display: block; */
+  left: 0;
+  outline: none;
+}
+
+.main-menu:target .menu-close {
+  z-index: 1001;
+}
+
+.main-menu:target ul {
+  position: relative;
+  z-index: 1000;
+}
+/* + adjacent sibling */
+.main-menu:target + .backdrop {
+  position: fixed;
+  display: block;
+  left: 0;
+  top: 0;
   width: 100%;
-  /*
-  background-color: white; 
-  */
-
-  &__logo {
-    background-color: white;
-      &--img {
-        display: block;
-        margin-right: auto;
-        margin-left: auto;
-      }
-  }
-
-
-  &__list {
-    text-align: center;
-    margin: 0 0;
-    padding: 40px 0 40px 0;
-    /*
-    background-color: rgba($mainBlue, 1); 
-    transition: background-color .3s ease-out;
-     */
-
-    @mixin atMedium {
-      background-color: white;
-      padding: 10px 0 30px 0;
-    }
-  }
-
-  &__list > li {
-    display: block;
-    padding: 10px;
-      @mixin atMedium {
-        display: inline;
-        padding: 10px;
-      }
-  }
-
-  &__list--icone {
-    display: inline;
-  }
-
-  &__list > li a {
-    font-size: 0.8rem;
-    font-weight: 500;
-    text-decoration: none;
-    color: $mainBlue;
-
-      @mixin atMedium {
-        font-size: 1rem;
-        color: $mainBlue;
-      }
-  }
-
-  &__list > li a:hover {
-    color: $secondaryBlue;
-  }
-
-  &__menu-icon {
-    width: 20px;
-    height: 20px;
-    background-color: $mainBlue;
-    position: absolute;
-    top: 20px;
-    right: 20px;
-
-    @mixin atMedium {
-      display: none;
-    }
-  }
-
-  &__menu-content {
-    /*
-    display: none;
-    */
-    
-    opacity: 0;
-    background-color: white;
-    transition: opacity .5s ease-out;
-    position: relative;
-    z-index: -10;
-    
-    @mixin atMedium {
-      opacity: 1;
-      z-index: 1;
-    }
-
-    &--is-visible {
-      opacity: 1;
-      z-index: 1;
-
-      /*
-      display: block;
-      /*
-      transition: background-color .5s ease-out;
-      background-color: red;
-      */
-    }
-
-  }
-
-  
-  
+  height: 100%;
+  z-index: 998;
+  background-color: rgba(0,0,0,0.85);
+  cursor: default;
 }
