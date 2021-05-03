@@ -1,9 +1,9 @@
 .hero {
 
-    padding-top: 100px;
+    padding-top: 120px;
 
     @mixin atMedium {
-        padding-top: 170px;
+        padding-top: 210px;
     }
 
     &__title {

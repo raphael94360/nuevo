@@ -7,7 +7,6 @@ header {
 header .row {
   display: flex;
   flex-flow: row nowrap;
-  /* background-color: white; */
 }
 
 .logo {
@@ -31,6 +30,12 @@ header .row {
   font-size: 1.5rem;
 }
 
+.li-icone {
+  margin: auto;
+} 
+
+
+
 .menu-toggle:hover, 
 .menu-toggle:focus {
   color: $secondaryBlue;
@@ -44,49 +49,107 @@ header .row {
   overflow-x: visible;
   transition: left 0.4s ease-in;
   z-index: 999;
+
+  @mixin atMedium {
+    position: static;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+/* .main-menu nav {
+  margin: 20px 0;
+} */
+
+nav li {
+  display: block;
+
+  @mixin atMedium {
+    display: inline-block;
+  }
 }
 
 .main-menu ul {
   list-style: none;
   margin: 0;
-  padding-top: 5em;
+  padding: 5em 0;
   min-height: 100%;
   width: 320px;
-  background-color: #1a1a1a;
+  background-color: white;
+
+  @mixin atMedium {
+    margin: 0 0 30px 0;
+    padding: 0;
+    width: 100%;
+    text-align: center;
+  }
 }
 
 .main-menu a {
   display: block;
-  padding: 0.75em;
-  color: white;
+  margin: 0;
+  padding: 1em;
+  color: $mainBlue;
   font-weight: 300;
   text-decoration: none;
-  border-bottom: 1px solid #383838; 
+  text-align: center;
+
+  @mixin atMedium {
+    margin: 0 0 20px 0;
+    padding: 0 10px 0 10px;
+  }
 }
+
+.li-candidat a {
+  color: white;
+  background-color: $mainBlue;
+  margin: 0 40px;
+  border-radius: 5px;
+
+  @mixin atMedium {
+    margin: 0;
+    padding: 10px;
+
+  }
+}
+
+
+
+.main-menu li:first-child a {
+  
+  @mixin atMedium {
+    margin: 0px; 
+  }
+} 
 
 a.menu-close {
   border: none;
-}
 
-.main-menu li:first-child a {
-  border-top: 1px solid #383838;
-
+  @mixin atMedium {
+    display: none;
+  }
 }
 
 .main-menu a:hover,
 .main-menu a:focus {
-  background: #333;
-  color: #C85028;
+  color: $secondaryBlue;
+  }
+
+.li-candidat a:hover {  
+  background-color: $secondaryBlue;
+  color: $mainBlue;
+  font-weight: 400;
 }
+
 
 .main-menu .menu-close {
   position: absolute;
-  right: 0;
+  right: 10px;
   top: 0;
+  font-size: 1.5rem;
 }
 
 .main-menu:target {
-  /* display: block; */
   left: 0;
   outline: none;
 }
