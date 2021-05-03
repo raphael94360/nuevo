@@ -1,16 +1,3 @@
-<<<<<<< HEAD
-f.header {
-  padding: 20px 0;
-  position: absolute;
-  width: 100%;
-  z-index: 2;
-  transition: background-color .3s ease-out;
-
-
-
-  &--is-expanded {
-    background-color: white;
-=======
 header {
   position: fixed;
   background-color: white;
@@ -70,9 +57,6 @@ header .row {
   }
 }
 
-/* .main-menu nav {
-  margin: 20px 0;
-} */
 
 nav li {
   display: block;
@@ -123,125 +107,18 @@ nav li {
     margin: 0;
     padding: 10px;
 
->>>>>>> header
   }
 }
 
-<<<<<<< HEAD
-  @mixin atMedium {
-    position: fixed;
-    background-color: white;
-  }
- 
-  &__logo {
-    position: absolute;
-    top: 10px;
-    left: 50%;
-    transform: translateX(-50%);
-    @mixin atMedium {
-      left: auto;
-      transform: translateX(0);
-    }
-=======
 
 
 .main-menu li:first-child a {
   
   @mixin atMedium {
     margin: 0px; 
->>>>>>> header
   }
 } 
 
-<<<<<<< HEAD
-  &__menu-icon {
-    width: 20px;
-    height: 19px;
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    z-index: 10;
-
-    &::before {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 20px;
-      height: 3px;
-      background-color: $mainBlue;
-      transform-origin: 0 0;
-      transition: transform .3s ease-out;
-    }
-
-    &__middle {
-      position: absolute;
-      top: 8px;
-      left: 0;
-      width: 20px;
-      height: 3px;
-      background-color: $mainBlue;
-      transition: all .3s ease-out;
-      transform-origin: 0 50%;
-    }
-
-    &::after {
-      content: "";
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      width: 20px;
-      height: 3px;
-      background-color: $mainBlue;
-      transform-origin: 0 100%;
-      transition: transform .3s ease-out;
-    }
-
-    @mixin atMedium {
-      display: none;
-    }
-  }
-
-  &__menu-icon--close-x {
-
-    &::before {
-      transform: rotate(45deg) scaleX(1.25);
-    }
-
-    .header__menu-icon__middle {
-      opacity: 0;
-      transform: scaleX(0);
-    }
-
-    &::after {
-      transform: rotate(-45deg) scaleX(1.25) translateY(1px);
-    }
-  }
-
-  &__menu-content {
-    opacity: 0;
-    transform: scale(1.2);
-    transition: all .3s ease-out;
-    position: relative;
-    z-index: -10;
-    padding-top: 100px;
-
-    @mixin atMedium {
-      display: flex;
-      justify-content: flex-end;
-      opacity: 1;
-      z-index: 1;
-      padding-top: 0;
-      transform: scale(1);
-
-    }  
-    
-    &--is-visible {
-      opacity: 1;
-      z-index: 1;
-      transform: scale(1);
-    }
-=======
 a.menu-close {
   border: none;
 
@@ -249,17 +126,12 @@ a.menu-close {
     display: none;
   }
 }
->>>>>>> header
 
 .main-menu a:hover,
 .main-menu a:focus {
   color: $secondaryBlue;
   }
 
-<<<<<<< HEAD
-}
-
-=======
 .li-candidat a:hover {  
   background-color: $secondaryBlue;
   color: $mainBlue;
@@ -299,4 +171,3 @@ a.menu-close {
   background-color: rgba(0,0,0,0.85);
   cursor: default;
 }
->>>>>>> header
